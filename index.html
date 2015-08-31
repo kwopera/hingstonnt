@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Hingston Chinese Restaurant & Takeaway</title>
+<link rel="stylesheet" type="text/css" href="screen.css" />
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<br/><br/><br/><br/><br/><br/><br/><br/>Local Chinese Restaurant & Takeaway in Darwin NT
+		</div>
+		<div id="nav">
+			<UL>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="menus/lunch.pdf" target="_blank">Lunch</a></li>
+				<li><a href="menus/dinein.pdf" target="_blank">Dine In</a></li>
+				<li class="nobd"><a href="menus/takeaway.pdf" target="_blank">Takeaway</a></li>
+			</UL>
+		</div>
+		<div id="container">
+			<div id="intro">
+				<div id="introtext">
+					<h1>Hingston Chinese Restaurant & Takeaway</h1>
+	<p>
+	Hingston Chinese Restaurant has been awarded "Certificate of Excellence 2013" on <a href="http://www.tripadvisor.com.au/Restaurant_Review-g255066-d797472-Reviews-Hingston_Chinese_Restaurant_Take_Away-Darwin_Top_End_Northern_Territory.html" target="_blank"><strong>Trip Advisor</strong></a> and also was recently reviewed on Trip Advisor by customers as "Best Chinese in Darwin", "Excellent Value", "Darwins BEST Chinese", "top notch chinese in the burbs" etc. </p>
+
+	<p>*Photos on the left are for your reference only, actual product may differ and is subject to avilability.
+	</p> 
+	</br></br></br>
+					<div id="order">
+						Call 8927 8088 for Takeaway Orders
+					</div>
+				</div>
+				<div id="introimg" style="background-image: url(img/<?php $random = rand(1,8); echo $random; ?>.jpg)">
+				<img id="randimg" src="" />
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="detail">
+				<div class="box1">
+					<p>LUNCH</p>
+					<p>Wednesday - Monday 11.30am - 2.00pm</p>
+					<p>DINNER</p>
+					<p>Wednesday - Monday 4.30pm - 10pm</p>
+					<p>* Catering available</p>
+				</div>
+				<div class="box2">
+					<p>ADDRESS</p>
+					<br/>
+					<p>Shop 1, Anula Shopping Centre</p>
+					<p>Yanyula Drive, Anula NT 0812</p>
+					<br/>
+					<p><strong><a href="http://maps.google.com/maps?hl=en&ie=UTF8&cid=11100450396219753560&ll=-12.383599,130.894396&spn=0.014922,0.019312&z=16&iwloc=A&iwd=1" target="_blank">Get Google Map!</a></strong></p>
+				</div>
+				<div class="box3">
+					<p>CONTACT</p>
+					<br/>
+					<p>Phone: 8927 8088</p>
+					<p>Phone/Fax: 8927 8099</p>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="footer">
+			All Rights Reserved 2015 Hingston Chinese Restaurant & Takeway Darwin NT
+		</div>
+		<div>
+	</div>
+	<script>
+
+		function getRandomImage() {
+		var images = ['img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg', 'img/7.jpg', 'img/8.jpg'];
+		var image = images[Math.floor(Math.random()*images.length)];
+
+		return image;
+		}
+
+		function displayRandomImage() {
+		var htmlImage = document.getElementById("randimg");
+		htmlImage.src = getRandomImage();
+		}
+		displayRandomImage();
+
+	</script>
+</body>
+</html>
